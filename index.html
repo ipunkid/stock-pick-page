@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日一股 · 实盘复盘与历史胜率</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 28px 20px 48px; background: #f5f6f8; color: #1f2328;
+  font: 14px/1.6 -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+.wrap { max-width: 1180px; margin: 0 auto; }
+h1 { font-size: 22px; margin: 0 0 6px; }
+h2 { font-size: 16px; margin: 28px 0 10px; padding-left: 9px; border-left: 3px solid #8a94a6; }
+h3 { font-size: 14px; margin: 0 0 8px; }
+.sub { color: #5c6672; font-size: 12.5px; margin-bottom: 18px; }
+.cards { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 6px; }
+.card { flex: 1 1 180px; background: #fff; border: 1px solid #e3e6ea; border-radius: 10px; padding: 12px 14px; }
+.card .k { font-size: 12px; color: #6b7480; }
+.card .v { font-size: 19px; font-weight: 600; margin: 3px 0 2px; }
+.card .s { font-size: 11.5px; color: #8a94a6; }
+.panel { background: #fff; border: 1px solid #e3e6ea; border-radius: 10px; padding: 4px 0; overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+th, td { padding: 8px 10px; border-bottom: 1px solid #eef0f3; text-align: left; white-space: nowrap; }
+th { background: #fafbfc; color: #4b5563; font-weight: 600; position: sticky; top: 0; }
+tbody tr:nth-child(even) { background: #fcfcfd; }
+tbody tr:last-child td { border-bottom: 0; }
+.mono { font-variant-numeric: tabular-nums; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+.up { color: #d92b2b; font-weight: 600; }
+.down { color: #0e9f6e; font-weight: 600; }
+.flat { color: #6b7480; }
+.cmp { color: #8a94a6; font-size: 11.5px; margin-left: 4px; }
+.legend { font-size: 12px; color: #6b7480; margin: 4px 2px 0; }
+.small { font-size: 12px; color: #4b5563; }
+.muted { color: #8a94a6; }
+.total { margin: 10px 2px 0; font-size: 13px; }
+footer { margin-top: 30px; padding-top: 14px; border-top: 1px solid #e3e6ea; color: #6b7480; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>每日一股 · 实盘复盘与历史胜率</h1>
+  <div class="sub">生成时间 2026-09-14 12:38 ｜ 数据来源：同花顺公开行情接口、巨潮资讯网公告（新浪行情兜底）｜ 本页为量化规则筛选记录，非投资建议</div>
+  <div class="cards"><div class="card"><div class="k">复盘次数</div><div class="v">3</div><div class="s"><span class="flat">口径：复盘日开盘买入</span></div></div><div class="card"><div class="k">当日收益率</div><div class="v">2/3 = 66.7%</div><div class="s">平均 <span class="up">+3.27%</span></div></div><div class="card"><div class="k">次日卖出收益率</div><div class="v">2/3 = 66.7%</div><div class="s">平均 <span class="up">+1.42%</span>（T+1 可兑现）</div></div><div class="card"><div class="k">待结算</div><div class="v">0</div><div class="s"><span class="flat">卖出日未到</span></div></div></div>
+
+  <h2>历史胜率与复盘明细（按选股日倒序）</h2>
+  <div class="panel"><table>
+    <thead><tr><th>选股日</th><th>代码</th><th>名称</th><th>推荐理由</th><th>开盘</th><th>最低</th>
+    <th>最高</th><th>收盘</th><th>当日收益率</th><th>次日卖出日</th><th>次日开盘</th><th>次日卖出收益率</th></tr></thead>
+    <tbody><tr><td class="mono">2026-09-10</td><td class="mono">002636</td><td>金安国纪</td><td class="small">覆铜板+业绩增长+扩产</td><td class="mono">76.00</td><td class="mono">73.00</td><td class="mono">84.00</td><td class="mono">82.46</td><td class="mono"><span class="up">+8.50%</span></td><td class="mono">09-14</td><td class="mono"><span class="up">78.51</span><span class="cmp">+2.51</span></td><td class="mono"><span class="up">+3.30%</span></td></tr><tr><td class="mono">2026-09-09</td><td class="mono">002046</td><td>国机精工</td><td class="small">金刚石散热+半导体耗材+商业航天</td><td class="mono">60.50</td><td class="mono">58.65</td><td class="mono">60.89</td><td class="mono">59.04</td><td class="mono"><span class="down">-2.41%</span></td><td class="mono">09-11</td><td class="mono"><span class="down">58.83</span><span class="cmp">-1.67</span></td><td class="mono"><span class="down">-2.76%</span></td></tr><tr><td class="mono">2026-09-08</td><td class="mono">002068</td><td>黑猫股份</td><td class="small">超级电容+导电炭黑+炭黑龙头</td><td class="mono">9.65</td><td class="mono">9.10</td><td class="mono">10.01</td><td class="mono">10.01</td><td class="mono"><span class="up">+3.73%</span></td><td class="mono">09-10</td><td class="mono"><span class="up">10.01</span><span class="cmp">+0.36</span></td><td class="mono"><span class="up">+3.73%</span></td></tr></tbody>
+  </table></div>
+  <div class="legend">红涨绿跌；开盘/最低/最高/收盘为复盘日（选股次一交易日）行情；次日开盘单元格：红/绿为该开盘价相对复盘日开盘价的涨跌，右侧小字为差值（元）。</div>
+  <div class="total">累计3次 当日 胜率2/3=66.7% 均<span class="up">+3.27%</span> 次日卖出 胜率2/3=66.7% 均<span class="up">+1.42%</span>（3条已结算）</div>
+
+  <footer>
+    收益率口径：当日收益率 = 复盘日（选股次一交易日）开盘买入、当日收盘卖出；
+    次日卖出收益率 = 复盘日开盘买入、复盘日次一交易日开盘卖出（对应 A 股 T+1 机制下可兑现口径）。<br>
+    本页所有内容均为已发生的公开数据记录，不含预测、评级或买卖建议；股市有风险，决策请自行判断。
+  </footer>
+</div>
+</body>
+</html>
